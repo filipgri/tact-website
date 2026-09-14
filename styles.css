@@ -338,3 +338,51 @@ footer a:hover { text-decoration: underline; }
   opacity: 1 !important;
   transform: none !important;
 }
+
+/* Hiring banner */
+
+.hiring-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  max-width: 620px;
+  margin: 2rem auto 0;
+  padding: 1rem 1.4rem;
+  background: #fff;
+  border: 2px solid #18a383;
+  border-left: 8px solid #18a383;
+  border-radius: 10px;
+  font-size: 1.02rem;
+  line-height: 1.5;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(24, 163, 131, 0.18);
+}
+
+.hiring-tag {
+  background: #18a383;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.hiring-banner a {
+  color: #0f6b56;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hiring-banner a:hover { color: #18a383; }
+
+.hiring-banner a:focus-visible {
+  outline: 3px solid #18a383;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
