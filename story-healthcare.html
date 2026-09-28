@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting to the Appointment — TACT</title>
+  <meta name="description" content="A TACT study with 23 people with aphasia and six healthcare professionals, exploring the work of getting through the healthcare journey.">
+  <!-- favicon-->
+
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon//favicon.svg" />
+<link rel="shortcut icon" href="favicon//favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon//apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="TACT" />
+<link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-brand" aria-label="TACT Home">
+          <img src="tact-logo.png" alt="TACT" style="height:30px;">
+
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="stories.html" class="active">Stories</a></li>
+      <li><a href="easyread.html">Easy Read</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <article class="story-article">
+      <a href="stories.html" class="back-link">&larr; Back to stories</a>
+
+      <p class="story-eyebrow">Research</p>
+      <h1>Getting to the appointment is only the beginning</h1>
+      <p class="story-lede-title">Designing better communication support across the healthcare journey</p>
+      <p class="story-byline">The TACT Team</p>
+
+      <img src="images/HC-setup.jpg" alt="A TACT healthcare co-design workshop set up with illustrated story cards on the table." class="story-hero">
+
+      <div class="story-body">
+        <p>You call your GP surgery to book an appointment. A recorded voice gives you several options. You wait, someone answers, and you need to explain why you're calling. Later, there may be a form to complete, directions to follow and questions to prepare. By the time you sit down with the doctor, you have already done a lot of communicating.</p>
+
+        <p>A 2022 Healthwatch England survey of 605 people who needed communication support found that 30% rarely or never received the support they needed. Behind that figure are everyday experiences of trying to get an appointment, explain a concern or understand what happens next. We wanted to understand the work people with aphasia do to get through this journey, and where better support could make a difference.</p>
+
+        <p>Much of our healthcare system rests on an assumed fluency: being able to explain, understand, read and respond when required. For people with aphasia, these expectations can turn language into a stop-or-go signal at each stage of care. Getting through may depend on finding the words quickly enough, understanding an instruction or having someone alongside you to help.</p>
+
+        <p>Our latest study brought together the experiences of 23 people with aphasia and six healthcare professionals. We began by talking with professionals about the different routes people take through healthcare. Then, through quizzes, discussions and design workshops, people with aphasia helped us explore what those routes actually feel like.</p>
+
+        <p>People shared the work they were already doing to make healthcare possible. They rehearsed conversations with family, wrote down symptoms and questions, and kept notebooks they could take to appointments.</p>
+
+        <figure class="story-figure story-figure--float">
+          <img src="images/HC-props.jpeg" alt="Illustrated story cards used in the healthcare design workshops.">
+          <figcaption>Illustrated story cards helped people explore situations they recognised.</figcaption>
+        </figure>
+
+        <p>These experiences became the starting point for designing together. Using illustrated story cards, we explored situations people recognised and imagined what might help. Ideas included a badge or card that could share communication needs at reception, tools for preparing questions and revisiting what the doctor said, and clearer ways to find out what support was available.</p>
+
+        <p>The work is giving us a clearer direction for designing healthcare technologies: support needs to connect what happens before, during and after an appointment. We're looking forward to developing these ideas further with people with aphasia, and sharing what we learn along the way.</p>
+
+        <p class="story-end">Thank you to everyone who shared their experiences, worked through ideas and asked the questions that moved our thinking forward.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-logos">
+      <span class="footer-logo-text">UKRI</span>
+      <span class="footer-logo-text">King's College London</span>
+      <span class="footer-logo-text">City St George's</span>
+    </div>
+    <p>&copy; 2026 TACT — Total Communication Technologies · <a href="mailto:tact@kcl.ac.uk">tact@kcl.ac.uk</a></p>
+    <p style="margin-top:0.5rem;">Funded by UKRI Future Leaders Fellowship</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60); });
+    document.getElementById('navToggle').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+    document.querySelectorAll('#navLinks a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
+  </script>
+</body>
+</html>

@@ -284,6 +284,52 @@ footer a:hover { text-decoration: underline; }
 .story-card p { font-size: 0.9rem; color: var(--text-secondary); font-weight: 300; line-height: 1.7; }
 
 
+/* Clickable story cards */
+.story-card-link { text-decoration: none; color: inherit; display: block; }
+.story-card { display: flex; flex-direction: column; height: 100%; }
+.story-card-thumb { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; background: var(--teal-subtle); }
+/* Contain a non-3:2 image with a little white around it */
+.story-card-thumb--contain { object-fit: contain; background: #ffffff; padding: 0.9rem; }
+/* Anchor the crop to the top (keeps a top-heavy subject like a pinned poster) */
+.story-card-thumb--top { object-position: top center; }
+.story-card-more { display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 1rem; font-family: var(--font-display); font-size: 0.8rem; font-weight: 600; color: var(--teal-deep); transition: gap 0.25s; }
+.story-card-link:hover .story-card-more { gap: 0.6rem; }
+
+
+/* ═══════════════════════════════
+   STORY ARTICLE (single story page)
+   ═══════════════════════════════ */
+
+.story-article { max-width: 780px; margin: 0 auto; padding: 10rem 2rem 5rem; }
+.story-article .back-link { margin-bottom: 2.5rem; }
+.story-eyebrow { font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-deep); font-weight: 600; margin-bottom: 1rem; }
+.story-article h1 { font-family: var(--font-display); font-size: clamp(2rem,5vw,3rem); font-weight: 700; color: var(--white); line-height: 1.15; margin-bottom: 0.6rem; }
+.title-icon { width: 0.78em; height: 0.78em; display: inline-block; vertical-align: -0.06em; margin: 0 0.12em 0 0.18em; color: var(--teal-deep); }
+.story-lede-title { font-size: clamp(1.1rem,2.5vw,1.35rem); color: var(--text-secondary); font-weight: 400; margin-bottom: 1.5rem; }
+.story-byline { font-size: 0.85rem; color: var(--text-muted); font-weight: 400; padding-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.08); margin-bottom: 2.5rem; }
+.story-hero { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px; display: block; margin-bottom: 2.5rem; box-shadow: 0 8px 40px rgba(0,0,0,0.10); }
+.story-body p { font-size: 1.08rem; line-height: 1.9; color: var(--text-secondary); font-weight: 300; margin-bottom: 1.5rem; }
+.story-body p:first-of-type { font-size: 1.18rem; color: var(--text-primary); font-weight: 400; }
+.story-figure { margin: 2.5rem auto; text-align: center; }
+.story-figure img { max-height: 480px; width: auto; max-width: 100%; border-radius: 16px; display: inline-block; box-shadow: 0 6px 30px rgba(0,0,0,0.10); }
+/* Floated figure — text wraps beside it */
+.story-figure--float { float: right; width: 300px; max-width: 45%; margin: 0.3rem 0 1.2rem 2rem; text-align: center; }
+.story-figure--float img { max-height: none; width: 100%; }
+.story-figure--float figcaption { text-align: left; }
+/* Two photos side by side */
+.story-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2.75rem 0; }
+.story-duo figure { margin: 0; }
+.story-duo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 16px; display: block; box-shadow: 0 6px 30px rgba(0,0,0,0.10); }
+.story-duo figcaption { font-size: 0.8rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 0.7rem; line-height: 1.5; }
+@media (max-width: 600px) { .story-duo { grid-template-columns: 1fr; gap: 2rem; } }
+@media (max-width: 640px) {
+  .story-figure--float { float: none; width: auto; max-width: 100%; margin: 2.5rem auto; }
+  .story-figure--float figcaption { text-align: center; }
+}
+.story-figure figcaption { font-size: 0.8rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 0.7rem; line-height: 1.5; }
+.story-end { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.08); }
+
+
 /* ═══════════════════════════════
    ACCESSIBILITY
    ═══════════════════════════════ */

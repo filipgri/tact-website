@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Design Club Begins — TACT</title>
+  <meta name="description" content="TACT's new school-based research strand: a monthly Design Club exploring communication with children through making and experimenting.">
+  <!-- favicon-->
+
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon//favicon.svg" />
+<link rel="shortcut icon" href="favicon//favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon//apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="TACT" />
+<link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-brand" aria-label="TACT Home">
+          <img src="tact-logo.png" alt="TACT" style="height:30px;">
+
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="stories.html" class="active">Stories</a></li>
+      <li><a href="easyread.html">Easy Read</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <article class="story-article">
+      <a href="stories.html" class="back-link">&larr; Back to stories</a>
+
+      <p class="story-eyebrow">Research</p>
+      <h1>We have an announcement to make: our Design Club begins</h1>
+      <p class="story-lede-title">A new strand of research takes us into school, exploring communication with children themselves</p>
+      <p class="story-byline">The TACT Team</p>
+
+      <img src="images/design-club-fair.jpeg" alt="The TACT team meeting children and families at the school's Family Fair." class="story-hero">
+
+      <div class="story-body">
+        <p>Following instructions, answering a question, joining a conversation at break time: so much of a school day depends on communication. Speech and Language UK estimates that roughly three children in an average class of 30 have lifelong speech and language difficulties. For these children, having the time, support and opportunities to contribute matters throughout the day.</p>
+
+        <p>Our newest strand of research takes us into school to explore these everyday experiences with children themselves. We want to understand how they navigate the places and interactions around them, what helps, and what they would like to change. To give this work a home, we have started a monthly Design Club where we can explore ideas through making, experimenting and trying things together.</p>
+
+        <p>We began by asking the children to help shape the club. What should we explore? What would they enjoy making? Which materials and technologies would they like to try? In our first session, children voted on topics, activities and technologies, making decisions that will guide what happens next.</p>
+
+        <p>The first session brought plenty of excitement and ideas we had not considered. We are still at the beginning, but the children have already given us a lot to think about and plenty to get started on.</p>
+
+        <div class="story-duo">
+          <figure>
+            <img src="images/design-club-board.jpg" alt="A voting board from the Design Club, where children chose topics and activities.">
+            <figcaption>Children voted on topics, activities and technologies to explore together.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/design-club-soundboard.jpg" alt="Children trying out a sound-making activity at the first Design Club session.">
+            <figcaption>Exploring sound and technology together at the first session.</figcaption>
+          </figure>
+        </div>
+
+        <p class="story-end">We will keep sharing what we make and learn together.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-logos">
+      <span class="footer-logo-text">UKRI</span>
+      <span class="footer-logo-text">King's College London</span>
+      <span class="footer-logo-text">City St George's</span>
+    </div>
+    <p>&copy; 2026 TACT — Total Communication Technologies · <a href="mailto:tact@kcl.ac.uk">tact@kcl.ac.uk</a></p>
+    <p style="margin-top:0.5rem;">Funded by UKRI Future Leaders Fellowship</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60); });
+    document.getElementById('navToggle').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+    document.querySelectorAll('#navLinks a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
+  </script>
+</body>
+</html>

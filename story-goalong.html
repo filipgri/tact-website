@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out and About — TACT</title>
+  <meta name="description" content="TACT's ethnographic fieldwork has started — spending time with people with aphasia in their everyday lives across London.">
+  <!-- favicon-->
+
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon//favicon.svg" />
+<link rel="shortcut icon" href="favicon//favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon//apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="TACT" />
+<link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-brand" aria-label="TACT Home">
+          <img src="tact-logo.png" alt="TACT" style="height:30px;">
+
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="stories.html" class="active">Stories</a></li>
+      <li><a href="easyread.html">Easy Read</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <article class="story-article">
+      <a href="stories.html" class="back-link">&larr; Back to stories</a>
+
+      <p class="story-eyebrow">Research</p>
+      <h1>Out and About</h1>
+      <p class="story-lede-title">TACT ethnographic work has started</p>
+      <p class="story-byline">The TACT Team</p>
+
+      <img src="images/GA-busstop.jpg" alt="A member of the TACT team and a research participant waiting together at a London bus stop." class="story-hero">
+
+      <div class="story-body">
+        <p>Think about your last visit to the hairdresser's. How did you explain what you wanted? Perhaps you pointed to a picture, showed how much you wanted taken off, or said "the usual" to someone who has cut your hair for years. Now imagine trying to describe that whole exchange afterwards.</p>
+
+        <p>After years of working with people with aphasia, we found ourselves returning to this difficulty. We had spent time together in workshops, heard about people's experiences and designed technologies together. Yet there was still so much about everyday communication that we were not seeing.</p>
+
+        <p>To understand more, we needed to spend more time together with our community.</p>
+
+        <figure class="story-figure story-figure--float">
+          <img src="images/GA-bus-wheelchair.jpg" alt="Boarding a London bus with a wheelchair user during a go-along visit.">
+          <figcaption>Out on a go-along: everyday journeys reveal what everyday communication really involves.</figcaption>
+        </figure>
+
+        <p>So our research has taken us out onto the streets of London. Nine people with aphasia have welcomed us into their daily lives, inviting us into their homes and taking us to cafés, shops, museums and the hairdresser's. They chose where we went. We walked, talked, waited for buses and learned along the way.</p>
+
+        <p>There is a lot to notice when you have time to spend together. Something tucked into a bag before leaving home may help with a conversation later. And a moment when we think we should help may be one where the person wants time to try for themselves.</p>
+
+        <p>These details matter for what we design next. We are beginning with individual people and the things they want to do, working together on bespoke ways to support them. Spending this time together helps us understand where something new and meaningful might be useful and how it could fit into their lives.</p>
+
+        <p class="story-end">We will be sharing more from these outings and the design work that follows. For now, a big thank you to everyone who has made room for us in their day.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-logos">
+      <span class="footer-logo-text">UKRI</span>
+      <span class="footer-logo-text">King's College London</span>
+      <span class="footer-logo-text">City St George's</span>
+    </div>
+    <p>&copy; 2026 TACT — Total Communication Technologies · <a href="mailto:tact@kcl.ac.uk">tact@kcl.ac.uk</a></p>
+    <p style="margin-top:0.5rem;">Funded by UKRI Future Leaders Fellowship</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60); });
+    document.getElementById('navToggle').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+    document.querySelectorAll('#navLinks a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
+  </script>
+</body>
+</html>
